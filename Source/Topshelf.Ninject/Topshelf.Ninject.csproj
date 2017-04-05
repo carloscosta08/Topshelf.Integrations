@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Topshelf.Ninject</RootNamespace>
     <AssemblyName>Topshelf.Ninject</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -65,19 +65,11 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
-
     <Reference Include="Ninject">
       <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Ninject.3.2.2.0\lib\net35\Ninject.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Ninject.3.2.2.0\lib\net40\Ninject.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
-
-    <Reference Include="Topshelf">
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Topshelf.3.2.0\lib\net35\Topshelf.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
-    </Reference>
-
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -85,7 +77,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-
+    <Reference Include="Topshelf, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Topshelf.4.0.3\lib\net452\Topshelf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HostConfiguratorExtensions.cs" />

@@ -19,7 +19,6 @@ namespace Topshelf.Quartz.Tests
         {
             Host host = HostFactory.New(configurator =>
                                             {
-                                                
                                                 configurator.UseTestHost();
                                                 configurator.Service<SampleService>(s =>
                                                                                         {
@@ -37,12 +36,11 @@ namespace Topshelf.Quartz.Tests
         }
 
         [Test]
-        [Ignore]
+        [Ignore("Ignored")]
         public void TestCanScheduleJobAsService()
         {
             Host host = HostFactory.New(configurator =>
             {
-
                 configurator.UseTestHost();
 
                 configurator.ScheduleQuartzJobAsService(
@@ -50,7 +48,7 @@ namespace Topshelf.Quartz.Tests
                     q.WithJob(() => JobBuilder.Create<SampleJob>().Build()).AddTrigger(
                         () => TriggerBuilder.Create().WithSimpleSchedule(builder => builder.WithRepeatCount(0)).Build()));
             });
-            
+
             host.Run();
 
             System.Threading.Thread.Sleep(TimeSpan.FromSeconds(2.0));

@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.Ninject", "Source\Topshelf.Ninject\Topshelf.Ninject.csproj", "{F26B9EC4-13CF-4093-BD1F-65F9538FD68A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.Quartz", "Source\Topshelf.Quartz\Topshelf.Quartz.csproj", "{E1751F00-1C7E-45BA-942E-A014F9958E16}"

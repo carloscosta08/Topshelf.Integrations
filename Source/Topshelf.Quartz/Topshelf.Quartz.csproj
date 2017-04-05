@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Topshelf.Quartz</RootNamespace>
     <AssemblyName>Topshelf.Quartz</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +63,18 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Quartz, Version=2.5.0.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Quartz.2.5.0\lib\net40\Quartz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -69,27 +82,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Topshelf">
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Topshelf.3.2.0\lib\net35\Topshelf.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
-    </Reference>
-    <Reference Include="Common.Logging">
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Common.Logging.3.1.0\lib\net35\Common.Logging.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Common.Logging.3.1.0\lib\net40\Common.Logging.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Common.Logging.3.1.0\lib\net40\Common.Logging.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Common.Logging.Core">
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Common.Logging.Core.3.1.0\lib\net35\Common.Logging.Core.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Common.Logging.Core.3.1.0\lib\net40\Common.Logging.Core.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Common.Logging.Core.3.1.0\lib\net40\Common.Logging.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Quartz">
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Quartz.2.3.2\lib\net35\Quartz.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
+    <Reference Include="Topshelf, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Topshelf.4.0.3\lib\net452\Topshelf.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
@@ -103,6 +97,10 @@
     <Compile Include="SchedulejobServiceConfiguratorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

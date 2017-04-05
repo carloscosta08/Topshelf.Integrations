@@ -8,9 +8,9 @@ using Topshelf.WebApi.Ninject;
 
 namespace Sample.Topshelf.WebApi
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
             HostFactory.Run(c =>
             {
@@ -25,13 +25,13 @@ namespace Sample.Topshelf.WebApi
                     s.WhenStopped((service, control) => service.Stop());
 
                     //Topshelf.WebApi - Begins configuration of an endpoint
-                    s.WebApiEndpoint(api => 
+                    s.WebApiEndpoint(api =>
                         //Topshelf.WebApi - Uses localhost as the domain, defaults to port 8080.
                         //You may also use .OnHost() and specify an alternate port.
                         api.OnLocalhost()
                             //Topshelf.WebApi - Pass a delegate to configure your routes
                             .ConfigureRoutes(Configure)
-                            //Topshelf.WebApi.Ninject (Optional) - You may delegate controller 
+                            //Topshelf.WebApi.Ninject (Optional) - You may delegate controller
                             //instantiation to Ninject.
                             //Alternatively you can set the WebAPI Dependency Resolver with
                             //.UseDependencyResolver()
@@ -45,9 +45,9 @@ namespace Sample.Topshelf.WebApi
         private static void Configure(HttpRouteCollection routes)
         {
             routes.MapHttpRoute(
-                    "DefaultApiWithId", 
-                    "Api/{controller}/{id}", 
-                    new { id = RouteParameter.Optional }, 
+                    "DefaultApiWithId",
+                    "Api/{controller}/{id}",
+                    new { id = RouteParameter.Optional },
                     new { id = @"\d+" });
         }
     }
@@ -106,8 +106,7 @@ namespace Sample.Topshelf.WebApi
     {
         public int Square(int id)
         {
-            return id*id;
+            return id * id;
         }
     }
-
 }
