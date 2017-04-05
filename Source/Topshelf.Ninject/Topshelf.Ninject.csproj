@@ -64,11 +64,27 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release 4.6|AnyCPU'">
+    <OutputPath>bin\Release 4.6\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ninject">
       <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Ninject.3.2.2.0\lib\net35\Ninject.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Ninject.3.2.2.0\lib\net40\Ninject.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6'">..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Topshelf">
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Topshelf.3.2.0\lib\net35\Topshelf.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6'">..\..\packages\Topshelf.4.0.3\lib\net452\Topshelf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,10 +93,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Topshelf, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Topshelf.4.0.3\lib\net452\Topshelf.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HostConfiguratorExtensions.cs" />
