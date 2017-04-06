@@ -76,27 +76,27 @@
       <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Topshelf.3.2.0\lib\net35\Topshelf.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6'">..\..\packages\Topshelf.4.0.3\lib\net452\Topshelf.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6.1'">..\..\packages\Topshelf.4.0.3\lib\net452\Topshelf.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging">
       <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Common.Logging.3.1.0\lib\net35\Common.Logging.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Common.Logging.3.1.0\lib\net40\Common.Logging.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Common.Logging.3.1.0\lib\net40\Common.Logging.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6'">..\..\packages\Common.Logging.3.1.0\lib\net40\Common.Logging.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6.1'">..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Common.Logging.Core">
       <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Common.Logging.Core.3.1.0\lib\net35\Common.Logging.Core.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Common.Logging.Core.3.1.0\lib\net40\Common.Logging.Core.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Common.Logging.Core.3.1.0\lib\net40\Common.Logging.Core.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6'">..\..\packages\Common.Logging.Core.3.1.0\lib\net40\Common.Logging.Core.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6.1'">..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Quartz">
       <HintPath Condition="$(TargetFrameworkVersion) == 'v3.5'">..\..\packages\Quartz.2.3.2\lib\net35\Quartz.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.0'">..\..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
       <HintPath Condition="$(TargetFrameworkVersion) == 'v4.5'">..\..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
-      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6'">..\..\packages\Quartz.2.5.0\lib\net40\Quartz.dll</HintPath>
+      <HintPath Condition="$(TargetFrameworkVersion) == 'v4.6.1'">..\..\packages\Quartz.2.5.0\lib\net40\Quartz.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
