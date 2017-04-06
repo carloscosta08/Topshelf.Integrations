@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
-    <id>Topshelf.Quartz.Ninject</id>
-    <version>0.4.0.0</version>
-    <title>Topshelf.Quartz.Ninject</title>
+    <id>Farfetch.Framework.Topshelf.Quartz.Ninject</id>
+    <version>0.4.0.1</version>
+    <title>Farfetch.Framework.Topshelf.Quartz.Ninject</title>
     <authors>Mark Huber</authors>
     <owners>Dealertrack Interactive</owners>
     <licenseUrl>https://github.com/dtinteractive/Topshelf.Integrations/blob/master/LICENSE</licenseUrl>
@@ -11,17 +11,17 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Topshelf.Quartz.Ninject provides extensions to Topshelf.Quartz allowing you to schedule jobs, built from your Ninject IoC Container, with your service class.</description>
     <releaseNotes>
-      0.4.0 - Updated Quartz, Ninject, and Topshelf Dependencies. Fixed missing dependnency on Ninject.Extensions.Quartz
+      0.4.1 - Updated Quartz, Common.Logging and Topshelf Dependencies
     </releaseNotes>
     <copyright>Copyright Dealertrack Interactive 2015</copyright>
-    <tags>Topshelf Quartz Ninject</tags>
+    <tags>Farfetch Framework Topshelf Quartz Ninject</tags>
     <dependencies>
-      <dependency id="Common.Logging" version="3.1.0" />
-      <dependency id="Common.Logging.Core" version="3.1.0" />
+      <dependency id="Common.Logging" version="3.3.1" />
+      <dependency id="Common.Logging.Core" version="3.3.1" />
       <dependency id="Ninject" version="3.2.2.0" />
       <dependency id="Ninject.Extensions.Quartz" version="0.3.0.0" />
-      <dependency id="Quartz" version="2.3.2" />
-      <dependency id="Topshelf" version="3.2.0" />
+      <dependency id="Quartz" version="2.5.0" />
+      <dependency id="Topshelf" version="4.0.3" />
     </dependencies>
   </metadata>
   <files>

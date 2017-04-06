@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
-    <id>Topshelf.Ninject</id>
-    <version>0.4.0.0</version>
-    <title>Topshelf.Ninject</title>
+    <id>Farfetch.Framework.Topshelf.Ninject</id>
+    <version>0.4.0.1</version>
+    <title>Farfetch.Framework.Topshelf.Ninject</title>
     <authors>Mark Huber</authors>
     <owners>Dealertrack Interactive</owners>
     <licenseUrl>https://github.com/dtinteractive/Topshelf.Integrations/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://www.github.com/dtinteractive/Topshelf.Integrations/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Topshelf.Ninject provides extensions to construct your service class from your Ninject IoC container.</description>
-    <releaseNotes>0.4.0 - Updated dependencies on TopShelf and Ninject</releaseNotes>
+    <releaseNotes>0.4.1 - Updated dependencies on TopShelf</releaseNotes>
     <copyright>Copyright Dealertrack Interactive 2015</copyright>
-    <tags>Topshelf Ninject</tags>
+    <tags>Farfetch Framework Topshelf Ninject</tags>
     <dependencies>
       <dependency id="Ninject" version="3.2.2.0" />
-      <dependency id="TopShelf" version="3.2.0" />
+      <dependency id="TopShelf" version="4.0.3" />
     </dependencies>
   </metadata>
   <files>
