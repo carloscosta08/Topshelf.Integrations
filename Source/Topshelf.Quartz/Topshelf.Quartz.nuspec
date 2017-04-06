@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Farfetch.Framework.Topshelf.Quartz</id>
+    <id>Topshelf.Quartz</id>
     <version>0.4.0.2</version>
-    <title>Farfetch.Framework.Topshelf.Quartz</title>
+    <title>Topshelf.Quartz</title>
     <authors>Mark Huber</authors>
     <owners>Dealertrack Interactive</owners>
     <licenseUrl>https://github.com/dtinteractive/Topshelf.Integrations/blob/master/LICENSE</licenseUrl>
@@ -16,7 +16,7 @@
       0.4.0 - Updated dependencies for TopShelf and Quartz
     </releaseNotes>
     <copyright>Copyright Dealertrack Interactive 2015</copyright>
-    <tags>Farfetch Framework Topshelf Quartz</tags>
+    <tags>Topshelf Quartz</tags>
     <dependencies>
       <dependency id="Common.Logging" version="3.3.1" />
       <dependency id="Common.Logging.Core" version="3.3.1" />

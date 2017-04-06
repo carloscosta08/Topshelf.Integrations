@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>Farfetch.Framework.Topshelf.Quartz.Ninject</id>
+    <id>Topshelf.Quartz.Ninject</id>
     <version>0.4.0.1</version>
-    <title>Farfetch.Framework.Topshelf.Quartz.Ninject</title>
+    <title>Topshelf.Quartz.Ninject</title>
     <authors>Mark Huber</authors>
     <owners>Dealertrack Interactive</owners>
     <licenseUrl>https://github.com/dtinteractive/Topshelf.Integrations/blob/master/LICENSE</licenseUrl>
@@ -14,7 +14,7 @@
       0.4.1 - Updated Quartz, Common.Logging and Topshelf Dependencies
     </releaseNotes>
     <copyright>Copyright Dealertrack Interactive 2015</copyright>
-    <tags>Farfetch Framework Topshelf Quartz Ninject</tags>
+    <tags>Topshelf Quartz Ninject</tags>
     <dependencies>
       <dependency id="Common.Logging" version="3.3.1" />
       <dependency id="Common.Logging.Core" version="3.3.1" />
